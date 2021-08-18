@@ -31,7 +31,6 @@ jobs:
       with:
         context: .
         file: ./Dockerfile
-        no-cache: true
         pull: true
         push: true
         tags: |
