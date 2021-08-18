@@ -11,7 +11,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    
     steps:
     - name: Checkout
       uses: actions/checkout@v2
@@ -34,4 +34,4 @@ jobs:
         pull: true
         push: true
         tags: |
-          ghcr.io/$GITHUB_REPOSITORY:latest
+          ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:latest
