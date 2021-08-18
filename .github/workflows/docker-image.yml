@@ -33,4 +33,5 @@ jobs:
         file: ./Dockerfile
         pull: true
         push: true
-        tags: ${{ github.repository_owner }}/fluentd-with-elasticsearch-plugin:latest
+        tags: |
+          ghcr.io/${{ GITHUB_REPOSITORY }}:latest
